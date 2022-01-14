@@ -1,0 +1,29 @@
+body {
+  color: #484848;
+  overflow-x: hidden;
+}
+.intro_company {
+  display: block;
+  padding-top: 40px;
+}
+.panel:first-of-type {
+  margin-top: 0;
+}
+.panel {
+  padding: 0 20px;
+  position: relative;
+  margin-top: 40px;
+}
+.panel_title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.simple_text {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 28px;
+}

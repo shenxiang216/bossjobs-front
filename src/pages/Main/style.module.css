@@ -1,0 +1,176 @@
+html ,body{
+    margin: 0;
+}
+
+.head{
+    height: 11.6875rem;
+    background: #35b9b3;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+}
+
+.login{
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: .875rem;
+    top: .875rem;
+    height: 1.625rem;
+    width: 1.625rem;
+    background-image: url(https://static.zhipin.com/zhipin-geek/v450/h5/wap/images/logo-x.png);
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+.btn {
+    position: absolute;
+    right: .875rem;
+    top: .875rem;
+    background: #fff;
+    border-radius: .8125rem;
+    border: 1px solid #fff;
+    font-size: .75rem;
+    color: #54bcb7;
+    height: 1.5625rem;
+    line-height: 1.5625rem;
+    padding: 0 .6875rem;
+    margin-right: -0.125rem;
+    z-index: 3;
+}
+
+.avatar_area{
+    position: absolute;
+    right: .875rem;
+    top: .875rem;
+    height: 1.5625rem;
+    line-height: 1.5625rem;
+    margin-right: -0.125rem;
+    z-index: 3;
+}
+
+.avatar{
+    border-radius: 100%;
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
+.clear{
+    clear: both;
+}
+
+.title{
+    height: 8.125rem;
+    background-image: url(https://static.zhipin.com/zhipin-geek/v450/h5/wap/images/home-search-text.png);
+    background-size: 16.25rem auto;
+    background-repeat: no-repeat;
+    background-position: center 2.75rem;
+    position: relative;
+    z-index: 2;
+}
+
+.img_building{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 8.125rem;
+    background-image: url(https://static.zhipin.com/zhipin-geek/v450/h5/wap/images/home/banner.png);
+    background-repeat: no-repeat;
+    height: 11.25rem;
+    width: 16.6875rem;
+    z-index: 0;
+}
+
+.search_area {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0rem .9375rem;
+    margin-top: .625rem;
+    z-index: 3;
+}
+
+.ipt_search {
+    width: 100%;
+    height: 2.3125rem;
+    line-height: 2rem;
+    border-radius: 1.875rem;
+    border: none;
+    font-size: .925rem;
+    font-weight: 350;
+    color: #aeaeae;
+    text-align: left;
+    padding: 0 4.5rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.ipt_search:focus {
+    outline: #59cac2;
+}
+
+.btn_search {
+    background-color: #fff;
+    color: #5bd4c7;
+    font-size: .875rem;
+    position: absolute;
+    border: none;
+    width: 3.75rem;
+    top: .5625rem;
+    right: 1.5625rem;
+    background: 0 0;
+}
+
+.span_city{
+    position: absolute;
+    width: 3.75rem;
+    left: 1.65rem;
+    top: .5625rem;
+    color: #414a60;
+    display: inline-flex;
+    align-items: center;
+    border-right: 1px solid rgba(242,245,250,1);
+    padding-right: .625rem;
+    height: 1.125rem;
+}
+
+.btn_city {
+    color: #333;
+    position: absolute;
+    border: none;
+    width: 3.75rem;
+    background: 0 0;
+    max-width: 2.625rem;
+
+    overflow: hidden;
+    font-size: .875rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon_right{
+    margin-left: .25rem;
+    width: 0;
+    height: 0;
+    border-right: .25rem solid transparent;
+    border-left: .25rem solid transparent;
+    border-top: .25rem solid #000;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+
+.main_page {
+    position: relative;
+    padding: 1.25rem;
+    padding-top: 1.75rem;
+}
+.hidden{
+    display: none;
+}

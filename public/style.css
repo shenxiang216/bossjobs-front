@@ -1,0 +1,68 @@
+a, b, body, button, dd, div, dl, em, footer, form, h1, h2, h3, h4, h5, h6, i, input, label, li, nav, p, select, span, td, textarea, u, ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+body {
+  background: #fff;
+  line-height: 26px;
+  color: #7e8793;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%!important;
+}
+body, button, input, option, select, td, textarea {
+  font-family: arial,verdana,helvetica,Microsoft Yahei,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body ::-webkit-scrollbar {
+  width: 4px;
+}
+body ::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+body ::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #414a60;
+}
+#main, #root {
+  position: relative;
+}
+#root {
+  min-height: 100%;
+}
+body {
+  background: #fff;
+  line-height: 26px;
+  color: #7e8793;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100%!important
+}
+
+body,html {
+  height: 100%
+}
+
+.amap-logo {
+  display: none!important;
+  visibility: hidden!important;
+}
+ 
+.amap-copyright {
+  display: none!important;
+  visibility: hidden!important;
+}

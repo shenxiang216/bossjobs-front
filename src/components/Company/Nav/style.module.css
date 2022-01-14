@@ -1,0 +1,43 @@
+.tab_wrap.sticky {
+  position: sticky;
+  top: 0;
+}
+.tab_wrap {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+.tabs {
+  line-height: 21px;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 24px;
+  display: flex;
+  text-align: center;
+}
+ .tab_item {
+  flex: 1;
+  height: 53px;
+  line-height: 53px;
+  position: relative;
+}
+/* .tab_item:first-of-type:before {
+  display: block;
+}
+.show_job .tab_item:last-of-type:before {
+  display: block;
+} */
+.tab_show :before{
+  display: block;
+}
+.tabs .tab_show :before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 45%;
+  height: 2px;
+  background-color: #53cac3;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

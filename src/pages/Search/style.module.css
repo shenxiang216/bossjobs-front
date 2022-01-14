@@ -1,0 +1,534 @@
+body {
+  background: #fff;
+  line-height: 1.625rem;
+  color: #7e8793;
+  font-size: 0.9375rem;
+  -webkit-text-size-adjust: 100%!important;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+a, b, body, button, dd, div, dl, em, footer, form, h1, h2, h3, h4, h5, h6, i, input, label, li, nav, p, select, span, td, textarea, u, ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+a:active, a:focus, a:hover, button, input, textarea {
+  outline: 0;
+}
+
+body, button, input, option, select, td, textarea {
+  font-family: arial,verdana,helvetica,Microsoft Yahei,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input[type=button], input[type=number], input[type=password], input[type=search], input[type=submit], input[type=tel], input[type=text], textarea {
+  -webkit-appearance: none;
+}
+
+#main, .wrap {
+  position: relative;
+}
+
+.wrap {
+  min-height: 100%;
+}
+
+.header {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.header::after, #main::after, .inner::after {
+  content: '';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+
+.search_bar {
+  height: 3.4375rem;
+  width: 100%;
+}
+
+.top_search {
+  float: right;
+  padding-top: 0.6875rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.625rem;
+}
+
+.search_bar .top_search {
+  float: initial;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ipt_wrap {
+  position: relative;
+}
+
+.top_search .ipt_wrap {
+  position: relative;
+}
+
+.search_bar .top_search .ipt_wrap {
+  position: relative;
+  padding: 0 3.75rem 0 3.0625rem;
+  padding-top: 0.8125rem;
+}
+
+.search_bar .top_search .ipt_wrap_new {
+  padding: 0 0.3125rem 0 4.875rem;
+  padding-top: 0.6875rem;
+}
+
+.search_bar .icon_home {
+  display: block;
+  position: absolute;
+  left: 1.125rem;
+  top: 1.125rem;
+}
+
+.search_bar .icon_home.icon_home_new {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.search_bar .icon_home .logo_x {
+  display: inline-block;
+  width: 1.625rem;
+  height: 1.625rem;
+  background: url(https://static.zhipin.com/zhipin-geek/v449/h5/wap/images/logo-x-fill.png);
+  background-size: 100% 100%;
+}
+
+.search_bar .icon_home {
+  display: block;
+  position: absolute;
+  left: 1.125rem;
+  top: 1.125rem;
+}
+
+.search_bar .icon_home.icon_home_old {
+  position: absolute;
+  left: 2.8125rem;
+  top: 1rem;
+}
+
+.search_bar .icon_home .home_logo_new {
+  display: inline-block;
+  width: 1.625rem;
+  height: 1.625rem;
+  background: url(https://static.zhipin.com/zhipin-geek/v449/h5/wap/images/home/home-logo.png);
+  background-size: 100% 100%;
+}
+
+.search_bar .top_search .ipt_search {
+  width: 100%;
+  height: 1.8125rem;
+  background-color: #f4f7f9;
+  border: none;
+  font-size: 0.875rem;
+  color: #8b96a6;
+  line-height: 1.1875rem;
+  padding: 0.3125rem 0.8125rem 0.3125rem 4.0625rem;
+}
+
+.link_search, .top_search .ipt_search {
+  width: 7.5rem;
+  height: 1.625rem;
+  padding: 0.125rem 0.8125rem;
+  border: 0.0625rem #62d5c8 solid;
+  border-radius: 0.9375rem;
+  font-size: 0.8125rem;
+  vertical-align: top;
+}
+
+.search_bar .top_search .ipt_search_new {
+  height: 2.3125rem;
+  line-height: 2rem;
+  border-radius: 0.3125rem;
+  border: none;
+  font-size: 0.875rem;
+  color: #333;
+  text-align: left;
+  padding: 0 4.375rem 0 0.9375rem;
+  background-color: #f5f5f5;
+}
+
+.top_search .btn_search {
+  position: absolute;
+  right: 0.125rem;
+  top: 0.0625rem;
+  width: 1.875rem;
+  height: 1.5rem;
+  vertical-align: top;
+  background-color: transparent;
+  border: 0;
+  background-position: center 0.25rem;
+  background-size: 1.0625rem auto;
+}
+
+.btn {
+  display: inline-block;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  border: 0.0625rem #5dd5c8 solid;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #5dd5c8;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search_bar .top_search .btn_search {
+  color: #5dd5ca;
+  background: 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.9375rem;
+  line-height: 3.4375rem;
+  height: 3.4375rem;
+  display: block;
+  width: 3.75rem;
+}
+
+.search_bar .top_search .ipt_wrap_new .btn_search {
+  color: #37c2bc;
+  background: 0 0;
+  right: 0;
+  top: 0;
+  font-size: 0.875rem;
+  line-height: 2.3125rem;
+  height: 2.3125rem;
+  width: 3.75rem;
+  padding-top: 0.6875rem;
+}
+
+.icon_close {
+  display: none!important;
+  position: absolute;
+  top: 1rem;
+  right: 4.1875rem;
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+
+.chat_wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.chat_icon {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.has_chat::after {
+  content: '';
+  position: absolute;
+  right: -0.0625rem;
+  top: -0.0625rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 0.1875rem;
+  background: #fd896b;
+}
+
+.chat_img {
+  width: 1.5rem;
+  height: 1.4375rem;
+  background: url(https://static.zhipin.com/zhipin-geek/v449/h5/wap/images/home/chat-icon-bells.png);
+  background-size: 100% 100%;
+}
+
+.chat_text {
+  margin-top: 0.125rem;
+  font-size: 0.625rem;
+  white-space: nowrap;
+  color: #fff;
+  line-height: 0.875rem;
+}
+
+.chat_text_active {
+  color: #5dd5ca;
+}
+
+.chat_wrap_new .chat_text_active {
+  color: #37c2bc;
+}
+
+.filter_bar_wrap {
+  display: flex;
+  align-items: center;
+  border-top: 0.0625rem solid #ebebeb;
+  border-bottom: 0.0625rem solid #ebebeb;
+  box-shadow: 0 0.125rem 0.375rem 0.0625rem rgb(0 0 0 / 3%);
+  margin-top: 0.4375rem;
+}
+
+.filter_bar_wrap ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.filter_bar_wrap .city_selector {
+  width: 20%;
+  text-align: center;
+}
+
+.filter_bar_wrap .city_selector:after {
+  border-bottom: 0.3125rem solid #c7c7c7;
+  border-left: 0.3125rem solid transparent;
+  border-top: none;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  transform: rotate(0);
+  position: relative;
+  top: 0.0625rem;
+  left: 0.1875rem;
+  transition: all .3s ease 0s;
+}
+
+.filter_bar.filter_bar_new ul li:after {
+  border-bottom: 0.3125rem solid #c7c7c7;
+  border-left: 0.3125rem solid transparent;
+  border-top: none;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  transform: rotate(0);
+  position: relative;
+  top: 0.0625rem;
+  left: 0.1875rem;
+  transition: all .3s ease 0s;
+}
+
+.filter_bar.filter_bar_new ul li.selected:after {
+  transform: rotate(180deg);
+}
+
+.filter_bar_wrap .filter_bar.filter_bar_new {
+  flex: 1;
+  box-shadow: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.filter_bar.filter_bar_new ul {
+  height: 2.8125rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent
+}
+
+.filter_bar ul {
+  display: flex;
+  height: 2.3125rem;
+  line-height: 2.3125rem;
+}
+
+.filter_bar.filter_bar_new ul li {
+  font-size: 0.8125rem;
+  color: #666;
+  line-height: 2.8125rem;
+}
+
+.filter_bar ul li {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  text-indent: -0.3125rem;
+  color: #aaa;
+}
+
+.filter_bar ul li.selected1 {
+  color: #484848;
+}
+
+.city_list_title {
+  height: 3.125rem;
+  line-height: 3rem;
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  display: none;
+}
+
+.job_list_new ul {
+  background-color: #f7f7f7;
+  margin-top: 2.5625rem;
+  padding-top: 0.125rem;
+  padding-left: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.job_list ul .item {
+  height: 5.6875rem;
+  position: relative;
+}
+
+.job_list_new ul .item {
+  padding: 1.125rem 1.25rem 1.0625rem;
+  margin-bottom: 0.375rem;
+  height: auto;
+  background: #fff;
+}
+
+.login_mask_tips {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.75rem;
+  background: rgba(0,0,0,.6);
+  padding: 0.5rem 1.25rem 0.5rem 1rem;
+  z-index: 2;
+}
+
+.login_mask_tips .close {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(https://static.zhipin.com/zhipin-geek/v450/h5/wap/images/home/close.png) no-repeat;
+  background-size: 100% 100%;
+  float: left;
+  margin-right: 0.3125rem;
+  margin-top: 0.25rem;
+}
+
+.login_mask_tips .text {
+  float: left;
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.login_mask_tips .go_to {
+  float: right;
+  height: 1.75rem;
+  background: #00c5bd;
+  border-radius: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 0 0.625rem;
+}
+
+.filter_content {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 5.8125rem);
+  background: rgba(0,0,0,.5);
+  z-index: 2;
+  box-sizing: border-box;
+  display: none;
+  overflow: hidden;
+}
+
+.mask{
+  flex: 1;
+  height: 100%;
+  background: rgba(138, 137, 137, 0.5);
+}
+
+.scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.filter_content li.filter_li {
+  background: #fff;
+  display: none;
+}
+
+.filter_content li.filter_li.selected {
+  display: block;
+}
+
+.filter_content li.filter_li>ul>li>div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.25rem;
+  color: #aaa;
+}
+
+.filter_content li.filter_li>ul>li {
+  height: 3.75rem;
+  line-height: 3.75rem;
+}
+
+.filter_content li.filter_li>ul>li>div.selected {
+  background: #f8f8fa;
+  color: #4b4b4b;
+}
+
+.change {
+  transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+  transition-duration: 0ms;
+  transform: translate(0px, 0px) translateZ(0px);
+}
+
+.loadmore{
+  margin-top: -12px;
+  text-align: center;
+  color: #8b96a6;
+  line-height: 3rem;
+  font-size: .875rem;
+  color: #8b96a6;
+  line-height: 3rem;
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.data_tips{
+  text-align: center;
+  min-height: 21.25rem;
+  position: relative;
+  background: #fff;
+}
+
+.tips_img{
+  padding-top: 3rem;
+  width: 6rem;
+}

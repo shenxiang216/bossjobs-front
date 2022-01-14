@@ -1,0 +1,109 @@
+a {
+  text-decoration: none;
+  color: #414a60;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4375rem;
+}
+
+.title_text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.5625rem;
+  padding-right: 1.25rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.title .salary {
+  font-size: 1.125rem;
+  font-weight: bolder;
+  color: #f67b4e;
+  line-height: 1.375rem;
+  flex-shrink: 0;
+  font-family: kanzhun-Regular,kanzhun;
+}
+
+.name {
+  display: flex;
+  margin-bottom: 0.5625rem;
+}
+
+.name span {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.25rem;
+  margin-right: 0.625rem;
+}
+
+.labels {
+  display: flex;
+  margin-bottom: 0.6875rem;
+  flex-wrap: wrap;
+}
+
+.labels span {
+  display: inline-block;
+  padding: 0.1875rem 0.4375rem;
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.0625rem;
+  background: #f5f5f5;
+  border-radius: 0.1875rem;
+  margin-right: 0.375rem;
+  margin-bottom: 0.3125rem;
+}
+
+.recruiter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recruiter .user_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.recruiter .name {
+  font-size: 0.75rem;
+  color: #333;
+  line-height: 1.0625rem;
+  margin-bottom: 0;
+}
+
+.recruiter .btn_chat {
+  width: 6.25rem;
+  height: 1.875rem;
+  background: #37c2bc;
+  border-radius: 0.9375rem;
+  font-size: 0.8125rem;
+  color: #fff;
+  line-height: 1.875rem;
+  text-align: center;
+  float: right;
+  border: 0;
+}
+
+.recruiter img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #40e0d0;
+  margin-right: 0.5rem;
+}

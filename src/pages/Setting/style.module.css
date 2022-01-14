@@ -1,0 +1,169 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f4f4f4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+  height: 3rem;
+}
+
+.title {
+  display: flex;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 0.65rem;
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.icon_back {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.box {
+  margin-top: 2rem;
+  flex: 1;
+}
+
+.item {
+  background-color: white;
+  height: 3.5rem;
+  margin-bottom: 0.15rem;
+  display: flex;
+}
+
+.input {
+  border: 0;
+  height: 3.5rem;
+  font-size: 1rem;
+  margin-left: 4rem;
+}
+
+.item_text {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.item_sextext {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: black;
+  margin-right: 4rem;
+}
+
+.sex_text {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.item_avator {
+  height:10rem;
+  background-color: white;
+  margin-bottom: 0.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.avator_text {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.upload {
+  background-color: #f6f8fa;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon_camera {
+  margin-left: 2.5rem;
+}
+
+.exit {
+  margin-top: 11.85rem;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.btn {
+  /* flex: 1;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #5ed5c8 ;
+  border: 0;
+  border-radius:0.3rem;
+  color: white;
+  cursor: pointer; */
+  width: 100%;
+  line-height: 2.5rem;
+  border: 1px #5dd5c8 solid;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: .0625rem;
+  background: #5dd5c8;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: .0625rem;
+  margin: .9375rem;
+}
+
+.CartCheckbox {
+  font-size: 2rem;
+  align-self: center;
+}
+
+.wrap {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  background-size: 100% auto;
+  background-position-y: center;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mask i {
+  color: #999;
+  font-size: 50px;
+}
+.mask:hover {
+  background: rgba(0, 0, 0, 0.55);
+}
+.uploadbtn {
+  display: none;
+}

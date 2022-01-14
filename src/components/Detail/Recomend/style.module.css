@@ -1,0 +1,111 @@
+.li_recomend a {
+  display: block;
+  padding: 1.25rem 1.125rem;
+  height: 5.4375rem;
+  overflow: hidden;
+  position: relative;
+}
+li a:before, .pos_bread:before {
+  content: '';
+  position: absolute;
+  left: 1.125rem;
+  right: 1.125rem;
+  top: 0;
+  height: 0.0625rem;
+  background: #e5e9f3;
+  overflow: hidden;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+.company_logo {
+  float: left;
+}
+.company_logo img {
+  display: block;
+  width: 2.9375rem;
+  height: 2.9375rem;
+  border-radius: 0.25rem;
+  background-color: #f7f7f7;
+}
+.info_primary {
+  margin-left: 3.875rem;
+  color: #414a60;
+}
+.job_recomend .info_primary .name {
+  line-height: 1.375rem;
+}
+.info_primary .name {
+  margin-top: -0.125rem;
+  margin-bottom: 0.125rem;
+}
+.red {
+  color: #fc6c38;
+}
+.info_primary .red {
+  width: 5.625rem;
+  text-align: center;
+  line-height: 0.9375rem;
+}
+.info_primary .red {
+  float: right;
+  font-size: 1rem;
+}
+.info_primary .name b {
+  display: block;
+  margin-right: 3.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.info_primary .name b .name_text {
+  display: inline-block;
+  max-width: 10.5rem;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.info_primary p.flex_box {
+  display: flex;
+}
+.info_primary .company_info {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.125rem;
+}
+.vdot {
+  display: inline-block;
+  padding: 0 0.3125rem 0 0.1875rem;
+}
+.info_primary .btn {
+  float: right;
+  height: 1.9375rem;
+  line-height: 1.9375rem;
+  width: 6.25rem;
+  border-radius: 0.9375rem;
+}
+.info_primary .list_chat {
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #5dd5c8;
+  margin-top: -0.0625rem;
+}
+.btn {
+  display: inline-block;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  border: 0.0625rem #5dd5c8 solid;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #5dd5c8;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.info_primary p {
+  font-size: 0.75rem;
+}

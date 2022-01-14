@@ -1,0 +1,25 @@
+.jobbox {
+  display: flex;
+  background-color: white;
+  height: 3rem;
+  margin-bottom: 0.15rem;
+}
+
+.itemtext {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.icon_delet {
+  margin-top: 0.7rem;
+  margin-right: 1rem;
+}
+
+.deletbox {
+  display: flex;
+  align-items: center;
+}

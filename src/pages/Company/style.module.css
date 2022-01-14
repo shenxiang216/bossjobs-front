@@ -1,0 +1,42 @@
+a, b, body, button, dd, div, dl, em, footer, form, h1, h2, h3, h4, h5, h6, i, input, label, li, nav, p, select, span, td, textarea, u, ul {
+  font-weight: 400;
+  }
+  
+.intro_basis {
+  padding: 25px 24px 14px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  border-bottom: 8px solid #f5f5f6;
+}
+.basis_img {
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+img {
+  border: none;
+}
+.basis_body {
+  margin-right: 80px;
+}
+.body_title {
+  font-size: 24px;
+  line-height: 33px;
+  color: #484848;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.body_con {
+  font-size: 14px;
+  line-height: 20px;
+  color: #797979;
+  margin-top: 7px;
+}
+.update_time {
+  margin-top: 2px;
+  color: #aaa;
+  font-size: 12px;
+}

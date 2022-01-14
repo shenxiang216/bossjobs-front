@@ -1,0 +1,68 @@
+#header {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  overflow: hidden
+}.logo a {
+  display: block;
+  width: 100px;
+  height: 32px;
+  background: url(./logo.png) center center no-repeat;
+  background-size: auto 17px;
+  -webkit-background-size: auto 17px;
+}
+.logo {
+  float: left;
+  padding: 6px 0 0 15px;
+}
+.logo span {
+  display: none;
+}
+.top_search_chat {
+  display: flex;
+  align-items: center;
+}
+.top_search {
+  float: right;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.top_search .ipt_wrap {
+  position: relative;
+}
+.ipt_wrap {
+  position: relative;
+}
+.btn_search,.icon_loading,.icon_search,.location-_ddress {
+  display: inline-block;
+  background-image: url(./icons.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  -webkit-background-size: 50% auto
+}
+.link_search {
+  display: block;
+  line-height: 22px;
+  color: #c0c4cf;
+}
+.link_search, .top_search .ipt_search {
+  width: 120px;
+  height: 26px;
+  padding: 2px 13px;
+  border: 1px #62d5c8 solid;
+  border-radius: 15px;
+  font-size: 13px;
+  vertical-align: top;
+}
+.link_search .icon_search {
+  position: absolute;
+  right: 7px;
+  top: 1px;
+  width: 20px;
+  height: 24px;
+  background-position: center 4px;
+  background-size: 17px auto;
+  -webkit-background-size: 17px auto;
+}
+

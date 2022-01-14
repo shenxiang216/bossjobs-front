@@ -1,0 +1,108 @@
+a {
+  text-decoration: none;
+  color: #414a60;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.title_text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  line-height: 25px;
+  padding-right: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.title .salary {
+  font-size: 18px;
+  color: #f67b4e;
+  line-height: 22px;
+  flex-shrink: 0;
+  font-family: kanzhun-Regular,kanzhun;
+}
+
+.name {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.name span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.labels {
+  display: flex;
+  margin-bottom: 11px;
+  flex-wrap: wrap;
+}
+
+.labels span {
+  display: inline-block;
+  padding: 3px 7px;
+  font-size: 12px;
+  color: #666;
+  line-height: 17px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}
+
+.recruiter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recruiter .user_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.recruiter .name {
+  font-size: 12px;
+  color: #333;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+
+.recruiter .btn_chat {
+  width: 100px;
+  height: 30px;
+  background: #37c2bc;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  float: right;
+  border: 0;
+}
+
+.recruiter img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #40e0d0;
+  margin-right: 8px;
+}

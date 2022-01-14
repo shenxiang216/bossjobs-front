@@ -1,0 +1,105 @@
+.element::-webkit-scrollbar { width: 0 !important }
+
+.title {
+    color: #333;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.125rem;
+}
+
+.HotJobs{
+    margin-top: 1.125rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1.125rem;;
+}
+
+.hotJob{
+    display: block;
+    border: 1px solid #e3e3e3;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #333;
+    border-radius: .1875rem;
+    padding: .4375rem .625rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.HotCompanysArea{
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    width: 140%;
+    flex-wrap: wrap;
+}
+
+.companys{
+    overflow-x: auto;
+}
+
+.HotCompany {
+    display: flex;
+    align-items: center;
+    padding: .75rem .9375rem;
+    background: #f9f9f9;
+    border-radius: .5rem;
+    margin: 0 0.5rem .625rem 0;
+    width: 9.25rem;
+}
+
+.div_com{
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.logo{
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: .5rem;
+}
+
+.text{
+    font-size: .75rem;
+    color: #666;
+    line-height: 1.125rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.companyName{
+    font-size: .875rem;
+    color: #333;
+    line-height: 1.25rem;
+    margin-bottom: .25rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.positionsNum{
+    font-size: .75rem;
+    color: #666;
+    line-height: 1.125rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+
+
+
+.HotCompanysArea::-webkit-scrollbar { height: 0 !important;width:0px !important; }
+.companys::-webkit-scrollbar { height: 0 !important;width:0px !important; }

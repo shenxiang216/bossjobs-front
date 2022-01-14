@@ -1,0 +1,77 @@
+.page {
+    margin: 0;
+    width: 100%;
+}
+.title {
+    padding-top: 2rem;
+    letter-spacing: 1px;
+    font-weight: 350;
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    color: #5dd5c8;
+    position: relative;
+    text-align: center;
+}
+
+.main_page {
+    padding: .9375rem;
+}
+
+.ipt_wrap{
+    position: relative;
+    text-align: center;
+}
+
+.ipt {
+    width: 100%;
+    padding: .5625rem 0px .5625rem 0px;
+    min-height: 1.375rem;
+    line-height: 1.375rem;
+    border: 1px solid #e3e7ed;
+    font-size: .875rem;
+    vertical-align: middle;
+    margin: .9375rem 0;
+    box-sizing: border-box;
+    padding-left: 2.1875rem;
+}
+
+.ipt:focus {
+    transition: all 0.5s;
+    box-shadow: 1px 2px 3px #d7f4f1;
+    border: 1px solid #59cac2;
+    border-color: #59cac2;
+    outline: #59cac2;
+}
+
+.icon {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    left: .5625rem;
+    top: 1.625rem;
+}
+
+.icon_phone {
+    background-image: url(https://static.zhipin.com/zhipin-geek/v450/web/geek/images/icons-sign.png);
+    background-repeat: no-repeat; 
+}
+
+.icon_email{
+    background-image: url(https://static.zhipin.com/zhipin-geek/v450/web/geek/images/icons-sign.png);
+    background-repeat: no-repeat; 
+    background-position: .125rem -8.8125rem;
+}
+.btn {
+    width: 100%;
+    line-height: 2.5rem;
+    border: 1px #5dd5c8 solid;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: .0625rem;
+    background: #5dd5c8;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: .0625rem;
+    margin: .9375rem 0;
+}

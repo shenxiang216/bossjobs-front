@@ -1,0 +1,14 @@
+.box {
+  display: flex;
+  background-color: white;
+  margin-bottom: 0.13rem;
+  height: 2.5rem;
+}
+
+.box_text {
+  margin-top: 0.5rem;
+}
+
+.icon-angle-right-o-thin:before {
+  content: "\E923";
+}

@@ -1,0 +1,76 @@
+.CityModal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    transition: all .5s ease 0s;
+    -webkit-transform: translateY(100%);
+}
+
+.city_show{
+    -webkit-transform: translateY(0%);
+}
+
+.city_head{
+    height: 3.125rem;
+    line-height: 3rem;
+    padding: 0 .625rem;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+.back{
+    float: left;
+    margin-right: .3125rem;
+    height: .75rem;
+    width: .75rem;
+    background: url(https://static.zhipin.com/zhipin-geek/v450/h5/wap/images/icon_close.png);
+    background-size: 100% 100%;
+    position: relative;
+    top: 1.0625rem;
+    left: .625rem;
+}
+
+.city_box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    position: absolute;
+}
+
+.city_child{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    position: absolute;
+    top: 3.125rem;
+    right: 0;
+    background: #f8f8fa;
+    display: block;
+    padding: 0 1.5625rem;
+    box-sizing: border-box;
+}
+
+.main_page{
+    color: #4b4b4b;
+    height: 3.75rem;
+    line-height: 3.75rem;
+}
+
+.city_text {
+    padding: 0 1.5625rem;
+}
+
+.selected {
+    background: #f8f8fa;
+}

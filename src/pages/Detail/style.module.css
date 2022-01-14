@@ -1,0 +1,384 @@
+/* 全局变量 */
+a,
+b,
+body,
+button,
+dd,
+div,
+dl,
+em,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+input,
+label,
+li,
+nav,
+p,
+select,
+span,
+td,
+textarea,
+u,
+ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+user agent stylesheet div {
+  display: block;
+}
+body {
+  background: #fff;
+  line-height: 26px;
+  color: #7e8793;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100% !important;
+}
+body,
+button,
+input,
+option,
+select,
+td,
+textarea {
+  font-family: arial, verdana, helvetica, Microsoft Yahei, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body ::-webkit-scrollbar {
+  width: 4px;
+}
+body ::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+body ::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #414a60;
+}
+#main,
+#root {
+  position: relative;
+}
+#root {
+  min-height: 100%;
+}
+body {
+  background: #fff;
+  line-height: 26px;
+  color: #7e8793;
+  font-size: 15px;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* job-banner页面css */
+.job_banner {
+  background-color: #62d5c8;
+  color: #fff;
+  padding: 15px 18px;
+}
+.job_banner .name {
+  font-size: 19px;
+}
+.job_banner .name .salary {
+  float: right;
+  font-size: 20px;
+}
+.job_banner .name .job_title {
+  margin-right: 76px;
+  font-size: 19px;
+  line-height: 22px;
+}
+.job_banner p {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.job_banner p .text_city {
+  color: #fff;
+}
+.job_banner .vline {
+  background: #fff;
+  height: 10px;
+}
+.job_tags .time,
+.job_tags span {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px #fff solid;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 12px;
+}
+.vline {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  vertical-align: middle;
+  background: #e0e0e0;
+  margin: 0 10px;
+}
+.job_tags {
+  position: relative;
+  padding-right: 75px;
+}
+.job_banner .time {
+  font-size: 10px;
+  margin: 3px 0 -10px;
+  opacity: 0.6;
+}
+/* job-author页面css */
+.job_author {
+  background-color: #eefbf9;
+  padding: 17px 18px;
+}
+.job_author .figure {
+  float: left;
+}
+.job_author .figure img {
+  display: block;
+  width: 53px;
+  height: 53px;
+  border-radius: 100%;
+}
+.job_author .info_primary {
+  margin-left: 68px;
+  height: 53px;
+}
+.job_author .info_primary .name {
+  font-size: 17px;
+  padding-top: 5px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 85px;
+}
+.info_primary {
+  margin-left: 62px;
+  color: #414a60;
+}
+.info_primary .name {
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+
+.job_author .info_primary .link_like {
+  display: inline-block;
+  margin-left: 20px;
+  padding-left: 20px;
+  background: url(./images/link-like.png) no-repeat;
+  background-position: 0 6px;
+  color: #fb7042;
+  font-size: 12px;
+  overflow: hidden;
+}
+.job_author .info_primary p {
+  margin-right: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info_primary p {
+  font-size: 12px;
+}
+.gray {
+  color: #9fa3af;
+}
+.vdot {
+  display: inline-block;
+  padding: 0 5px 0 3px;
+}
+.detail_content {
+  padding: 10px 18px 0;
+}
+.job_sec {
+  padding: 0 0 10px;
+}
+.job_sec .text {
+  padding-top: 11px;
+}
+.job_sec h3 {
+  color: #414a60;
+  font-weight: 700;
+  position: relative;
+  line-height: 44px;
+  font-size: 15px;
+}
+.job_sec h3:after {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #62d5c8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.detail_text.show_switch {
+  padding-top: 10px;
+}
+.detail_text {
+  color: #9fa3b0;
+  line-height: 21px;
+  font-size: 14px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.four_lines {
+  overflow: hidden;
+  display: flex;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
+.show_switch {
+  position: relative;
+}
+.view_more {
+  line-height: 32px;
+  text-align: center;
+  clear: both;
+  position: relative;
+  padding-top: 10px;
+  display: none;
+}
+.detail_layer {
+  height: 25px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -25px;
+}
+.detail_layer {
+  height: 25px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -25px;
+}
+.view_more .link_all {
+  display: block;
+  font-size: 14px;
+  color: #9fa3b0;
+}
+.job_location {
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  margin-top: 20px;
+  font-size: 13px;
+}
+.btn_search,
+.icon_loading,
+.icon_search,
+.location_address {
+  display: inline-block;
+  background-image: url(./images/icons.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  -webkit-background-size: 50% auto;
+}
+.location_address {
+  display: block;
+  background-size: 18px auto;
+  -webkit-background-size: 18px auto;
+  background-position: 5px -36px;
+  padding-left: 25px;
+  color: #62687a;
+  padding: 5px 15px 5px 26px;
+  font-size: 13px;
+  border-bottom: 1px #ecedef solid;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#map_container {
+  position: relative;
+}
+#map_container img,
+.map_container img {
+  width: 100%;
+  display: block;
+}
+
+/* job_company */
+.job_company {
+  background-color: #eefbf9;
+  padding: 16px 18px 13px;
+  margin-top: 10px;
+  display: block;
+}
+.company_logo {
+  float: left;
+}
+.job_company .info_primary {
+  margin-left: 80px;
+  min-height: 70px;
+}
+.job_company .company_logo img {
+  width: 64px;
+  height: 64px;
+}
+.company_logo img {
+  display: block;
+  width: 47px;
+  height: 47px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.info_primary {
+  margin-left: 62px;
+  color: #414a60;
+}
+.info_primary .flex_box {
+  display: flex;
+}
+
+.job_company .info_primary p {
+  line-height: 21px;
+}
+
+/* job-recomend */
+.job_recomend {
+  margin-top: 10px;
+}
+.job_recomend h3 {
+  font-size: 13px;
+  color: #767f96;
+  font-weight: 400;
+  padding: 7px 18px;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
