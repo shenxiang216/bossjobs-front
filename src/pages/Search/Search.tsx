@@ -1,11 +1,13 @@
 import { Link, useHistory, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+
 import Job from '../../components/Search/item'
 import * as api from '../../services/api'
 import style from './style.module.css'
 import CityModal from '../../components/CityModal'
-import { useEffect, useState } from 'react'
 import { IJobs, salary } from '../../types'
 import store from '../../store/store'
+import Toast from '../../components/Toast'
 
 // CityModal 滚动穿透
 let isDo1 = true
@@ -15,6 +17,11 @@ export default function Search() {
   const history = useHistory()
   const [rowNull, setRowNull] = useState<boolean>(false)
   const [havemore, setHavemore] = useState<boolean>(true)
+  const [cityres, setCityres] = useState<string>('全国')
+  const handleCityRes = (city: string) => {
+    setCityres(city)
+    history.push(`/search?${city}&query=${inputvalue}`)
+  }
   const location = useLocation()
   let City = decodeURI(
     location.search.substring(1, location.search.lastIndexOf('&'))
@@ -119,7 +126,6 @@ export default function Search() {
   useEffect(() => {
     setCity(City)
   }, [City])
-
   useEffect(() => {
     async function getData() {
       let result = await api.search(
@@ -195,7 +201,12 @@ export default function Search() {
   useEffect(() => {
     setJobName(jobname1)
   }, [jobname1])
-
+  useEffect(() => {
+    setCityres(location.search.substring(1, location.search.lastIndexOf('&')))
+    setInputvalue(
+      location.search.substring(location.search.lastIndexOf('=') + 1)
+    )
+  }, [location.search])
   function changeLi(li: number) {
     for (let i = 0; i < liStyle.length; i++) {
       if (i !== li) {
@@ -252,27 +263,27 @@ export default function Search() {
             <p className={`${style.ipt_wrap} ${style.ipt_wrap_new}`}>
               <Link
                 className={`${style.icon_home} ${style.icon_home_new}`}
-                to="/"
+                to='/'
               >
                 <span className={style.logo_x}></span>
               </Link>
               <Link
                 className={`${style.icon_home} ${style.icon_home_old}`}
-                to="/"
+                to='/'
               >
                 <span className={style.home_logo_new}></span>
               </Link>
               <input
-                type="search"
+                type='search'
                 value={inputvalue}
                 className={`${style.ipt_search} ${style.ipt_search_new}`}
-                placeholder="搜索职位"
+                placeholder='搜索职位'
                 onChange={(value) => {
                   setInputvalue(value.target.value)
                 }}
               ></input>
               <button
-                type="submit"
+                type='submit'
                 className={`${style.btn_search} ${style.btn}`}
                 onClick={() => {
                   setJobName(inputvalue)
@@ -285,7 +296,10 @@ export default function Search() {
 
             <div
               className={`${style.chat_wrap} ${style.chat_wrap_new} ${style.lead_flow_enter}`}
-              data-min-source="4"
+              data-min-source='4'
+              onClick={() => {
+                Toast('敬请期待!!!')
+              }}
             >
               <div className={`${style.has_chat} ${style.chat_icon}`}>
                 <div className={style.chat_img}></div>
@@ -307,14 +321,14 @@ export default function Search() {
                 }
               }}
             >
-              全国
+              {cityres}
             </div>
             <div className={`${style.filter_bar} ${style.filter_bar_new}`}>
               <ul>
                 {litext.map((element, i) => {
                   return (
                     <li
-                      key = {i}
+                      key={i}
                       className={liColor[i]}
                       onClick={() => {
                         lishow(i)
@@ -336,7 +350,8 @@ export default function Search() {
                     return (
                       <ul key={i}>
                         <li key={i}>
-                          <div key={i}
+                          <div
+                            key={i}
                             className={liselect1[i]}
                             onClick={() => {
                               lishow(0)
@@ -355,10 +370,10 @@ export default function Search() {
                 <li className={liStyle[1]}>
                   {degreetext.map((item, i) => {
                     return (
-                      <ul key = {i}>
-                        <li key = {i}>
+                      <ul key={i}>
+                        <li key={i}>
                           <div
-                            key = {i}
+                            key={i}
                             className={liselect2[i]}
                             onClick={() => {
                               lishow(1)
@@ -489,9 +504,10 @@ export default function Search() {
                 <li className={liStyle[3]}>
                   {companysizetext.map((item, i) => {
                     return (
-                      <ul key = {i}>
-                        <li key = {i}>
-                          <div key = {i}
+                      <ul key={i}>
+                        <li key={i}>
+                          <div
+                            key={i}
                             className={liselect4[i]}
                             onClick={() => {
                               lishow(3)
@@ -521,17 +537,15 @@ export default function Search() {
 
       <div className={`${style.job_list} ${style.job_list_new}`}>
         <ul>
-          {rows.map((item ,i) => (
-            <li 
-            key = {i}
-            className={style.item}>
+          {rows.map((item, i) => (
+            <li key={i} className={style.item}>
               <Job rows={item} key={i} status={false}></Job>
             </li>
           ))}
         </ul>
         <div style={!rowNull ? { display: 'block' } : { display: 'none' }}>
           <div
-            id="load"
+            id='load'
             style={havemore ? { display: 'block' } : { display: 'none' }}
             className={style.loadmore}
           >
@@ -547,8 +561,8 @@ export default function Search() {
         <div style={rowNull ? { display: 'block' } : { display: 'none' }}>
           <div className={style.data_tips}>
             <img
-              src="https://static.zhipin.com/zhipin-geek/v452/h5/wap/images/icon-empty.png"
-              alt=""
+              src='https://static.zhipin.com/zhipin-geek/v452/h5/wap/images/icon-empty.png'
+              alt=''
               className={style.tips_img}
             ></img>
             <p>没有找到相关职位</p>
@@ -567,13 +581,13 @@ export default function Search() {
               setStyle1({ display: 'none' })
             }}
           ></div>
-          <Link to="/Login">
+          <Link to='/Login'>
             <div className={style.text}>更多高薪职位推荐，跳槽薪资翻倍</div>
             <div className={style.go_to}>立即注册</div>
           </Link>
         </div>
       </div>
-      {CityModal(showCity)}
+      {CityModal(showCity, handleCityRes)}
     </div>
   )
 }

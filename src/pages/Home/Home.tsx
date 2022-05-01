@@ -1,15 +1,18 @@
-import style from './style.module.css'
-import { useHistory } from 'react-router'
-import * as api from '../../services/api'
-import store from '../../store/store'
-import Toast from '../../components/Toast'
-import { useEffect, useState } from 'react'
+import style from "./style.module.css"
+import { useHistory } from "react-router"
+import * as api from "../../services/api"
+import store from "../../store/store"
+import Toast from "../../components/Toast"
+import { useEffect, useState } from "react"
 export default function Home() {
   const history = useHistory()
-  const [src,setSrc]=useState<string>('')
+  const [src, setSrc] = useState<string>("")
   useEffect(() => {
-    if (store.username === '') history.push('/login')
-	setSrc(`/api/file/download/${store.photo}`)
+    if (store.username === "") {
+      history.push("/login")
+      return
+    }
+    setSrc(`/api/file/download/${store.photo}`)
   }, [history])
   return (
     <div className={style.bg}>
@@ -17,25 +20,21 @@ export default function Home() {
         <div
           className={style.title}
           onClick={() => {
-            history.push('/')
+            history.push("/")
           }}
         ></div>
       </div>
       <div className={style.userinfo}>
         <div className={style.welcome}>欢迎，{store.username}</div>
         <div>
-          <img
-            className={style.img_avator}
-            src={src}
-            alt=""
-          ></img>
+          <img className={style.img_avator} src={src} alt=""></img>
         </div>
       </div>
       <div className={style.function}>
         <div
           className={style.item}
           onClick={() => {
-            history.push('/Mycollection')
+            history.push("/Mycollection")
           }}
         >
           <div>
@@ -74,7 +73,7 @@ export default function Home() {
         <div
           className={style.item}
           onClick={() => {
-            history.push('/Setting')
+            history.push("/Setting")
           }}
         >
           <div>
@@ -113,7 +112,7 @@ export default function Home() {
         <div
           className={style.item}
           onClick={() => {
-            history.push('/Changepsw')
+            history.push("/Changepsw")
           }}
         >
           <div>
@@ -156,8 +155,8 @@ export default function Home() {
           onClick={async () => {
             await api.logout()
             store.setNull()
-            history.push('/')
-            return Toast('退出登陆成功！')
+            history.push("/")
+            return Toast("退出登陆成功！")
           }}
         >
           退出账号

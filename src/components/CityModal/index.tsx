@@ -1,7 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
 import js from '../../assets/data/data.json'
-import { useHistory } from 'react-router-dom'
 
 const hotCitys: string[] = [
   '全国',
@@ -22,8 +21,10 @@ const hotCitys: string[] = [
 ]
 const hotKey = '0'
 
-export default function CityModal(status: boolean) {
-  const history = useHistory()
+export default function CityModal(
+  status: boolean,
+  res: (city: string) => void
+) {
   const province = Object.values(js[86])
   const provinceKeys = Object.keys(js[86])
   const country = Object.values(js)
@@ -112,7 +113,7 @@ export default function CityModal(status: boolean) {
                 onClick={() => {
                   setIsshow(!isshow)
                   bodyShow()
-                  return history.push('/search?' + item + '&query=')
+                  res(item)
                 }}
                 key={index}
               >

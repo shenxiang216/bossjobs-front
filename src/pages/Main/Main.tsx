@@ -1,16 +1,29 @@
+/*
+ * @Author: 赵亚鑫Deep Lane
+ * @Date: 2021-08-04 13:56:11
+ * @LastEditors: 赵亚鑫Deep Lane
+ * @LastEditTime: 2022-04-16 16:19:29
+ * @Description:
+ */
 import { useHistory } from 'react-router-dom'
 import * as react from 'react'
+
 import style from './style.module.css'
 import HotJobs from '../../components/Main/Hot'
 import RecommandJobs from '../../components/Main/RecommandJobs'
 import CityModal from '../../components/CityModal'
 import store from '../../store/store'
+import { useState } from 'react'
 export default function Main() {
   let jobname2 = ''
   const [showCity, setShowCity] = react.useState<boolean>(true)
   const history = useHistory()
   function bodyHidden() {
     document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+  }
+  const [cityres, setCityres] = useState<string>('全国')
+  const handleCityRes = (city: string) => {
+    setCityres(city)
   }
   return (
     <react.Fragment>
@@ -37,9 +50,13 @@ export default function Main() {
               onClick={() => history.push('/home')}
             >
               <img
-                width="20px"
-                src={`/api/file/download/${store.photo}`}
-                alt=""
+                width='25px'
+                src={
+                  store.username !== ''
+                    ? `/api/file/download/${store.photo}`
+                    : ''
+                }
+                alt='avatar'
                 className={style.avatar}
               />
             </div>
@@ -55,7 +72,7 @@ export default function Main() {
               setShowCity(!showCity)
             }}
           >
-            <button className={style.btn_city}>全国</button>
+            <button className={style.btn_city}>{cityres}</button>
             <div className={style.icon_right}></div>
           </span>
           <input
@@ -67,7 +84,7 @@ export default function Main() {
           <button
             className={style.btn_search}
             onClick={() => {
-              history.push(`/search?全国&query=${jobname2}`)
+              history.push(`/search?${cityres}&query=${jobname2}`)
             }}
           >
             搜索
@@ -78,7 +95,7 @@ export default function Main() {
         <div className={style.main_page}>{HotJobs()}</div>
         {RecommandJobs()}
       </main>
-      {CityModal(showCity)}
+      {CityModal(showCity, handleCityRes)}
     </react.Fragment>
   )
 }

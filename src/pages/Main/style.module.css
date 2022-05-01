@@ -59,6 +59,7 @@ html ,body{
     border-radius: 100%;
     width: 1.5625rem;
     height: 1.5625rem;
+    object-fit: cover;
 }
 
 .clear{
